@@ -3,7 +3,7 @@
 <ModulePrefs
 title="MrAddon example of JIRA Server Dashboard Gadget"
 author="Raul Pelaez raulpelaez@mraddon.com www.mraddon.com"
-thumbnail="https://route_to_.png"
+thumbnail="https://www.google.es/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjf2IeQ2-7ZAhWCWRQKHSxGCpYQjRwIBg&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCat&psig=AOvVaw3xHu6iJ1NNn_verljvlnr6&ust=1521216476009103"
 screenshot="https://route_to.png"
 description="JIRA Server Dashboard Description">
  
@@ -24,35 +24,8 @@ description="JIRA Server Dashboard Description">
  
 <Content type="html">
 <![CDATA[
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script>
-function refresh() {
-jQuery.ajax({
- url: "https://coinmarketcap-nexuist.rhcloud.com/api/eth",
- type: "GET",
- 
- contentType: 'application/json; charset=utf-8',
- success: function(json) {
- document.getElementById("eth").innerHTML= json.price.eur;
-  
- },
- error : function(jqXHR, textStatus, errorThrown) {
- },
- 
- timeout: 120000,
- });
-}
- 
-refresh();
-</script>
-<table>
-<tr>
-<td><b>ETH</b></td>
-<td><font align="right" color="#7c06b7">
-<div id="eth">€</div>
-</font></td>
-</tr>
-</table>
+<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+<div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="USD" ></div>
 ]]>
 </Content>
 </Module>
